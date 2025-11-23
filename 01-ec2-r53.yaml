@@ -6,8 +6,9 @@
     sg_id:  sg-00f51e3430243ff58
     zone_id:  "Z015504635YTPJNLLKES7"
     domain_name:  "spdevhops.shop"
-    instances:
-    - mongodb
+    # we can pass instances through command line using -e
+    # instances:
+    # - mongodb
   tasks:
   - name: create ec2 instance
     amazon.aws.ec2_instance:
