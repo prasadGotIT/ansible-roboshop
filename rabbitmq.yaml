@@ -19,11 +19,11 @@
       enabled:  yes
 
 
-  - name: create and provide permission to user
+  - name: create and provide permissions to user
     community.rabbitmq.rabbitmq_user:
       user: roboshop
       password: roboshop123
-      permission:
+      permissions:
         - vhost: /
           configure_priv: .*
           read_priv: .*
