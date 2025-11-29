@@ -18,7 +18,7 @@
     loop:
     - cryptography
     - PyMysql
-  
+
 
   - name: create roboshop system user
     ansible.builtin.user:
@@ -49,7 +49,7 @@
       dest: /tmp/shipping.zip
 
   - name: unzip shipping application
-    ansible.builtin.unarchieve:
+    ansible.builtin.unarchive:
       src:  /tmp/shipping.zip
       dest: /app
       remote_src: yes
