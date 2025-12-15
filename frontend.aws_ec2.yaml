@@ -8,3 +8,8 @@ hostnames:
   - private-ip-address
 compose:
   ansible_host: private_ip_address
+
+keyed_groups:
+  - key: tags.Name
+    prefix: "dynamic"
+    seperator: "_"
